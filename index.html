@@ -12,6 +12,7 @@
         <div class="test-container">
             <div class="text-section">
                 <p id="text-to-type">
+                    <!-- Your text here -->
                     The sun had just begun to rise over the horizon, casting a warm golden glow across the sleepy village. The air was crisp and filled with the fresh scent of morning dew. Birds began to chirp their morning songs, welcoming the new day. The village was nestled in a lush valley surrounded by rolling hills and dense forests. It was a peaceful place where time seemed to slow down, and life followed a gentle rhythm.
 
                     In the heart of the village stood an old stone cottage, its walls covered in ivy and its roof adorned with moss. This was the home of Eleanor, an elderly woman known for her kindness and wisdom. She had lived in the village all her life and had seen it change and grow over the years. Despite her age, Eleanor was full of energy and always had a smile on her face.
@@ -43,22 +44,22 @@
                     As night fell, the village grew quiet once more. The stars came out, twinkling in the clear night sky. Eleanor looked out of her window and whispered a silent prayer of thanks. She felt blessed to have lived such a full and meaningful life.
 
                     As she climbed into bed and pulled the covers up to her chin, Eleanor closed her eyes and let out a contented sigh. She knew that tomorrow would bring new adventures and new joys. She drifted off to sleep with a smile on her face, dreaming of the beautiful forest and the peaceful village she called home.
+                
                 </p>
             </div>
             <textarea id="typed-text" placeholder="Start typing here..." autofocus></textarea>
         </div>
-        <div class="results">
-            <button id="submit-button">Submit</button>
-            <button id="restart-button">Restart</button>
-            <div class="result-stats">
-                <p id="timer">Time Taken: 0s</p>
-                <p id="typed-words">Typed Words: 0</p>
-                <p id="correct-words">Correct Words: 0</p>
-                <p id="wrong-words">Wrong Words: 0</p>
-                <p id="net-speed">Net Speed WPM: 0</p>
-                <p id="accuracy">Speed Accuracy: 0%</p>
-            </div>
-        </div>
+        <button id="submit-button">Submit</button>
+        <button id="restart-button">Restart</button>
+        <div class="timer" id="timer">15:00</div>
+        <form id="results-form" action="results.html" method="GET" style="display: none;">
+            <input type="hidden" id="timeTaken" name="timeTaken">
+            <input type="hidden" id="typedWords" name="typedWords">
+            <input type="hidden" id="correctWords" name="correctWords">
+            <input type="hidden" id="wrongWords" name="wrongWords">
+            <input type="hidden" id="netSpeed" name="netSpeed">
+            <input type="hidden" id="accuracy" name="accuracy">
+        </form>
     </div>
     <script src="script.js"></script>
 </body>
